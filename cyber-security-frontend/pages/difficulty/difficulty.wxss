@@ -1,0 +1,47 @@
+/* pages/difficulty/difficulty.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.difficulty{
+  width: 100%;
+  height: 700rpx;
+  margin-top: 220rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.d_logo{
+  height: 135rpx;
+}
+
+.d_button{
+  width: 40%;
+  height: 80rpx;
+  margin-top: 90rpx;
+}
+/* image{
+  width: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+
+.difficulty_choose{
+  width: 50rpx;
+  height: 180rpx;
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

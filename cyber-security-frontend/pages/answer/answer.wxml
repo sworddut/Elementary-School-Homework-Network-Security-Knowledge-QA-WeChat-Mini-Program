@@ -1,0 +1,59 @@
+<!--pages/answer/answer.wxml-->
+<view class="container">
+  <image class="bgImg" src="../../images/答题背景.png" ></image>
+
+  <view class="putpic">
+    <image class="smallpic" mode="aspectFit" src="../../images/举手图.png"></image>
+  </view>
+
+  <!--透明区域-->
+  <view class="mainblock">
+    <!--题目区-->
+    <view class="titleblock">
+      <form action="" bindsubmit="formSubmit" name="radio">
+        <!--问题-->
+        <view class="title">
+          <text class="titletext">
+            {{question.content}}
+          </text>
+        </view>     
+        <!--选项-->
+        <view wx:if="{{question.type == 1}}" class="option">
+          <radio-group class="radio-group" name="radio" bindchange="radioChange"> 
+            <radio class="radio" wx:key="optionId" value="t">正确</radio>
+            <radio class="radio" wx:key="optionId" value="f">错误</radio>
+          </radio-group>
+        </view>
+        <view wx:if="{{question.type == 2}}" class="option">
+          <radio-group class="radio-group" name="radio" bindchange="radioChange"> 
+            <radio class="radio" wx:for="{{question.optionList}}" wx:key="optionId" value="{{item.optionId}}" >
+                  <text>{{item.content}}</text>
+            </radio>
+          </radio-group>
+        </view>
+        <view wx:if="{{question.type == 3}}" class="option">
+          <checkbox-group class="checkbox-group" name="checkbox"  bindchange="radioChange">
+            <checkbox class="checkbox" wx:for="{{question.optionList}}"  wx:key="optionId" value="{{item.optionId}}">
+                  <text>{{item.content}}</text>
+            </checkbox>
+          </checkbox-group>
+        </view>
+        <view class="btn-area">
+          <button class="button" formType="submit">确认</button>
+          <button class="button" bindtap="nextQue" wx:if="{{item < length-1}}">下一题</button>
+          <button class="button" bindtap="changetohome" wx:else>已答完</button>
+        </view>
+      
+      </form>
+    </view>
+  </view>
+
+</view>
+
+<view class="modal_mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view class="modal_dialog" style="background:url('../../images/answer_right.jpg') center center no-repeat; width:70%; height:80%; background-size: contain;" wx:if="{{showModal == 1}}">
+</view>
+<view class="modal_dialog" style="background:url('../../images/answer_wrong.png') center center no-repeat; width:70%; height:80%; background-size: contain;" wx:if="{{showModal == 2}}">
+</view>
+<view class="okBtn" bindtap="hideModal" style="background:url('../../images/ok_btn.png') center center no-repeat; width:20%; height:5%; background-size: contain;"  wx:if="{{showModal}}">
+</view>

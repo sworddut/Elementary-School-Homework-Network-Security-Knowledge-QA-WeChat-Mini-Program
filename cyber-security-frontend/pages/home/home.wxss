@@ -1,0 +1,196 @@
+/* pages/home.wxss */
+page{
+  width: 100%;
+}
+.container{
+  z-index: -99;
+}
+
+.bgImg{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -999;
+}
+
+.content{
+    margin-top: 290rpx;
+    height: 650rpx;
+    width: 600rpx;
+    margin-left: 70rpx;
+    margin-right: 70rpx;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  height: 230rpx;
+  width: 100%;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: rgb(224, 166, 41);
+  background-image: linear-gradient(to top, rgb(255, 230, 0), rgb(252, 247, 188)); 
+}
+
+.user{
+  width: 45%;
+  padding:3% 5% 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.sign_score{
+  width: 55%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signBtn{
+  width: 50%;
+  height: 35%;
+  vertical-align: right;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: rgb(41, 204, 115);
+  border-radius: 15rpx;
+  color: white;
+  padding: 10rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.nickname,.score_num{
+  font-family: MingLiU;
+  font-weight: bold;
+  color: rgb(66, 61, 61);
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.scores{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20rpx;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+}
+
+.score_icon{
+  width: 30%;
+  height: 100%;
+}
+.score_num{
+  width: 70%;
+  height: 100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+.userinfo-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.choose{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+  width: 100%;
+  height: 350rpx;
+}
+
+.start,.kpasort{
+  width: 230rpx;
+  height: 95%;
+  margin: 10rpx;
+  margin-left: 20rpx;
+}
+
+.start{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  writing-mode: vertical-lr;
+  color: white;
+  font-size: 50rpx;
+  font-weight: bold;
+  letter-spacing: 20rpx;
+  background-image: linear-gradient(to top,rgb(134, 152, 201), rgb(212, 214, 221));
+  border-style: solid;
+  border-color: rgb(77, 77, 161);
+  border-radius: 5%;
+}
+
+.kpasort{
+  display: flex;
+  flex-direction: column;
+  margin-left: 60rpx;
+}
+
+.kp{
+  display: flex;
+  height: 45%;
+  width:100%;
+  margin-bottom: 15%;
+  border-style: solid;
+  border-color: rgb(216, 33, 33);
+  border-radius: 8%;
+  background-image: linear-gradient(to top,rgb(216, 33, 33) , rgb(236, 183, 212));
+  font-size: 50rpx;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  color: rgb(250, 250, 250);
+}
+
+.sort{
+  display: flex;
+  height: 40%;
+  width: 100%;
+  border-style: solid;
+  border-radius: 8%;
+  border-color: rgb(47, 192, 218);
+  background-image: linear-gradient(to top,rgb(47, 192, 218), rgb(170, 218, 207));
+  font-size: 50rpx;
+  font-weight: bold;
+  justify-content:center;
+  align-items: center;
+  color: rgb(250, 250, 250);
+}
+
+.modal_mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.9;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.modal_dialog{
+  /* overflow: hidden;   */
+  position: fixed;  
+  top: 10%;  
+  z-index: 1001;  
+  background: transparent;  
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.okBtn{
+  position: fixed;  
+  left: 40%;
+  z-index: 1001;  
+  bottom: 10%;
+}

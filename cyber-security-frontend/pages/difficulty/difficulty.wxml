@@ -1,0 +1,10 @@
+<!--pages/difficulty/difficulty.wxml-->
+<view class="container"  style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover;">
+  <view class="difficulty">
+    <image class="d_logo" src="../../images/difficulty_logo.png" mode="aspectFit"></image>
+    <image class="d_button" bindtap="changetoanswer" data-type="1" src="../../images/difficulty_easy.png" mode="aspectFit"></image>
+    <image class="d_button" bindtap="changetoanswer" data-type="2" src="../../images/difficulty_normal.png" mode="aspectFit"></image>
+    <image class="d_button" bindtap="changetoanswer" data-type="3" src="../../images/difficulty_hard.png" mode="aspectFit"></image>
+  <!-- <view class="index_logo" style="background: url({{index_logo}}) center center no-repeat; background-size: contain; justify-content: center;" mode='widthFix'></view> -->
+  </view>
+</view>

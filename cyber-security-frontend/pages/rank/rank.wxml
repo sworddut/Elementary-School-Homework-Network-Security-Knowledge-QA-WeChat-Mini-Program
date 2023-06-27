@@ -1,0 +1,26 @@
+<!--pages/rank/rank.wxml-->
+<view class="container">
+  <image class="bgImg" src="../../images/home.png" >
+  </image>
+  <view class="mainblock">
+    <!--排行榜字体-->
+    <image class="title" src="../../images/rank字体.png" mode="aspectFit" ></image>
+    <!--排名显示区-->
+    <view class="item-box">
+      <view class="items">
+        <view class="item" wx:for="{{userList}}" wx:key="userId">
+          <view class="inner txt">
+            <!--名次-->
+            <i>{{index+1}}</i>
+            <image class="item-icon" mode="widthFix" src="{{item.image}}"></image>
+            <i>{{item.nickname}}</i>
+            <i class="score">{{item.score}}</i>
+          </view>
+        </view>
+      </view>
+      </view>
+  </view>
+
+</view>
+
+

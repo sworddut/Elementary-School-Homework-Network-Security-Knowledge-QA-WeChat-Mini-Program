@@ -1,0 +1,91 @@
+{
+    "questionList": [
+        {
+            "questionId": "sdaf",
+            "type": 1,
+            "content": "为了保证安全性，密码算法应该进行保密。"
+        },
+        {
+            "questionId": "sfsf",
+            "type": 1,
+            "content": "一次一密体制即使用量子计算机也不能攻破。"
+        },
+        {
+            "questionId": "sdad",
+            "type": 3,
+            "content": "即使对同等安全能力水平的云服务商，其实现安全要求的方式也可能会有差异。为此，GB/T31168《信息安全技术云计算服务安全能力要求》在描述安全要求时引入了（）。",
+            "optionList": [
+                {
+                    "optionId": "a",
+                    "content": "赋值"
+                },
+                {
+                    "optionId": "b",
+                    "content": "重复"
+                },
+                {
+                    "optionId": "c",
+                    "content": "细化"
+                },
+                {
+                    "optionId": "d",
+                    "content": "选择"
+                }
+            ]
+        },
+        {
+            "questionId": "mmx",
+            "type": 2,
+            "content": "密码学的目的是。",
+            "optionList": [
+                {
+                    "optionId": "a",
+                    "content": "研究数据加密"
+                },
+                {
+                    "optionId": "b",
+                    "content": "研究数据解密"
+                },
+                {
+                    "optionId": "c",
+                    "content": "研究数据保密"
+                },
+                {
+                    "optionId": "d",
+                    "content": "研究信息安全"
+                }
+            ]
+        }
+    ],
+    "answerList": [
+        {
+            "questionId": "sdaf",
+            "type": 1,
+            "answer": [
+                "f"
+            ]
+        },
+        {
+            "questionId": "sdad",
+            "type": 3,
+            "answer": [
+                "a",
+                "d"
+            ]
+        },
+        {
+            "questionId": "sfsf",
+            "type": 1,
+            "answer": [
+                "f"
+            ]
+        },
+        {
+            "questionId": "mmx",
+            "type": 2,
+            "answer": [
+                "c"
+            ]
+        }
+    ]
+}

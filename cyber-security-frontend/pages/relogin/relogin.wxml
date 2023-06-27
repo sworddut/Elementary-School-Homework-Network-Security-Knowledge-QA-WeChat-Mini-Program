@@ -1,0 +1,13 @@
+<!--pages/relogin/relogin.wxml-->
+<view class="container" style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; justify-content: center;" >
+  <view class = "index_bg" style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; justify-content: center;" >
+    <view class="index_logo" style="background: url({{index_logo}}) center center no-repeat; background-size: contain; justify-content: center;" mode='widthFix'>
+    </view>
+    <view class="userinfo">
+      <button class="confirm_button" bindtap="goSign">
+        <image src="../../images/confirm_button.png" mode="aspectFit"></image>
+      </button>
+    
+    </view>
+  </view>
+</view>

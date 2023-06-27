@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/difficulty/difficulty",
+    "pages/answer/answer",
+    "pages/error/error",
+    "pages/home/home",
+    "pages/rank/rank",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008B8B",
+    "navigationBarTitleText": "网络安全知识科普",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

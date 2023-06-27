@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container" style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; justify-content: center;" >
+  <view class = "index_bg" style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; justify-content: center;" >
+    <view class="index_logo" style="background: url({{index_logo}}) center center no-repeat; background-size: contain; justify-content: center;" mode='widthFix'>
+    </view>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" class="confirm_button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image src="../../images/confirm_button.png" mode="aspectFit"></image>
+      </button>
+      <button wx:else class="confirm_button" bindtap="goSign">
+        <image src="../../images/confirm_button.png" mode="aspectFit"></image>
+      </button>
+      <!-- <block wx:else>
+        <image bindtap="goSign" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block> -->
+    </view>
+  </view>
+</view>

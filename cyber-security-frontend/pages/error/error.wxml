@@ -1,0 +1,30 @@
+<!--pages/answer/answer.wxml-->
+<view class="container">
+  <image class="bgImg" src="../../images/答题背景.png" ></image>
+
+  <view class="putpic">
+    <image class="smallpic" mode="aspectFit" src="../../images/加载失败.png"></image>
+  </view>
+
+  <!--透明区域-->
+  <view class="mainblock">
+    <!--题目区-->
+    <view class="titleblock">
+      <view class="title">
+          <text class="titletext">
+            服务器开小差了呢，晚点再试试吧  :) 
+          </text>
+      </view>
+    </view>
+    
+  </view>
+
+</view>
+
+<view class="modal_mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view class="modal_dialog" style="background:url('{{staticUrl}}/images/answer_right.png') center center no-repeat; width:60%; height:70%; background-size: cover;" wx:if="{{showModal == 1}}">
+</view>
+<view class="modal_dialog" style="background:url('{{staticUrl}}/images/answer_wrong.png') center center no-repeat; width:60%; height:70%; background-size: cover;" wx:if="{{showModal == 2}}">
+</view>
+<view class="okBtn" bindtap="hideModal" style="background:url('{{staticUrl}}/images/ok_btn.png') center center no-repeat; width:20%; height:5%; background-size: cover;"  wx:if="{{showModal}}">
+</view>
